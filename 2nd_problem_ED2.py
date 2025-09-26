@@ -12,7 +12,7 @@ for ax, beta in zip(axes, betas):
     phi = np.arctanh(beta)
 
     R = np.array([[np.cos(phi), -np.sin(phi)],
-                  [np.sin(phi),  np.cos(phi)]])
+                  [-np.sin(phi),  np.cos(phi)]])
  e_x  = np.array([1, 0])
     e_ct = np.array([0, 1])
 
@@ -35,3 +35,4 @@ for ax, beta in zip(axes, betas):
 
 plt.tight_layout()
 plt.show()
+
